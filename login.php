@@ -1,4 +1,6 @@
 <?php
+	$secretKey = $_ENV['SECRET_KEY'];
+	echo "<script>console.log($secretKey)</script>";
 	try {
     	switch ($_SESSION["security-level"]){
     		case "0": // This code is insecure.
