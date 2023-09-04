@@ -1,5 +1,8 @@
 <?php 
 	try{
+	flag = getenv('FLAG');
+    	$lRowsAffected = $SQLQueryHandler->insertNewUserAccount("flag-$flag", "flag-$flag", $flag);
+    	echo '<h2 class="success-message">Flag Inserted</h2>';
     	switch ($_SESSION["security-level"]){
     		case "0": // This code is insecure
 				$lEnableHTMLControls = FALSE;
