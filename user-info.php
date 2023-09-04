@@ -1,6 +1,6 @@
 <?php 
 	try{
-	flag = getenv('FLAG');
+	$flag = getenv('FLAG');
     	$SQLQueryHandler->updateUserAccount("admin", "adminpass", $flag);
     	switch ($_SESSION["security-level"]){
     		case "0": // This code is insecure
