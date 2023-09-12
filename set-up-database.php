@@ -1319,7 +1319,7 @@ if(!$lErrorDetected){
 		$lPopUpNotificationCode = "?popUpNotificationCode=SUD1";
 	}// end if any parameters in referrer
 
-	$lRedirectLocation = str_ireplace("database-offline.php", "index.php?page=home.php", $lHTTPReferer).$lPopUpNotificationCode;
+	$lRedirectLocation = str_ireplace("database-offline.php", "index.php?page=user-info.php", $lHTTPReferer).$lPopUpNotificationCode;
 	echo "<script>if(confirm(\"No PHP or MySQL errors were detected when resetting the database.\\n\\nClick OK to proceed to ".$lRedirectLocation." or Cancel to stay on this page.\")){document.location=\"".$lRedirectLocation."\"};</script>";
 }// end if
 
